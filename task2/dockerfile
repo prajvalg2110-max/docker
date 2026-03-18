@@ -1,0 +1,7 @@
+FROM nginx
+COPY script.sh /script.sh
+RUN chmod +x /script.sh
+EXPOSE 80
+ENTRYPOINT ["/script.sh"]
+
+
